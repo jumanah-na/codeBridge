@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Assignments</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="C:\Users\ASUS\OneDrive - King Abdullaziz University\Desktop\Prject499\Create Assigenment Page\AssignemnetStle.css">
+
+
+
+</head>
+
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="C:\Users\ASUS\OneDrive - King Abdullaziz University\Desktop\Prject499\Picture1.png" alt="Logo">
+            <span class="website-name">codeBridge</span>
+        </div>
+        <ul>
+
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="">ASSIGNMENETS</a></li>
+            <li><a href="">TUTOIRALS</a></li>
+            <li><a href="">CHATAI</a></li>
+            <li> <a href="">Helper</a></li>
+        </ul>
+    </div>
+    <form id="assignmentForm" onsubmit="validateForm(event)">
+        <div>
+            <h2> Create Assignment </h2>
+            <br>
+
+            <label for="instructions">Assignment Instructions</label>
+            <textarea id="instructions" name="Instructions" placeholder="Type the assignment instructions"
+                rows="8"></textarea>
+            <span id="instructionsError" class="error-message"></span>
+            <br>
+            <div class="date-range">
+                <div class="date-field">
+                    <label for="startDate">Start at</label>
+                    <input type="date" id="startDate" />
+                    <span id="startDateError" class="error-message"></span>
+                </div>
+                <div class="date-field">
+                    <label for="endDate">End at</label>
+                    <input type="date" id="endDate" />
+                    <span id="endDateError" class="error-message"></span>
+                </div>
+            </div>
+
+            <div class="select-wrapper">
+                <br><br>
+                <label for="class">Class <br></label>
+                <select id="class" class="dropDownMenu" name="class">
+                    <option value="" disabled selected>Select</option>
+                    <option value="class AAB">AAB</option>
+                    <option value="Class AAC">AAC</option>
+                    <option value="Class AAD">AAD</option>
+                </select>
+                <span id="selectError" class="error-message"></span>
+            </div>
+        </div>
+
+        <button type="submit" class="centered">Submit</button>
+
+    </form>
+    <div id="backdrop" class="backdrop"> </div>
+
+    <div class="popup" id="successPopup">
+        <img src="checked.png">
+        <h2>Thank you!</h2>
+        <p>The assignment has been successfully uploaded.</p>
+        <br>
+        <button type="button" id="okButton" class="centered">OK</button>
+    </div>
+    <div class="popup" id="confirmationPopup">
+        <h2>Confirm Submission</h2>
+        <p>Are you sure you want to submit this assignment?</p>
+        <br>
+        <div class="button-container">
+            <button type="button" id="confirmButton">Yes</button>
+            <button type="button" id="cancelButton">No</button>
+        </div>
+    </div>
+
+
+    <script
+        src="C:\Users\ASUS\OneDrive - King Abdullaziz University\Desktop\Prject499\Create Assigenment Page\AssignementForm.js"></script>
+</body>
+
+</html>
