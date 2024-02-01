@@ -5,138 +5,146 @@
 <head>
     <title>codeBridge</title>
     <!--style-->
-    
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        
-    * {
-    font-family: "Poppins", sans-serif;
-    color: #0c0c0c;
-    
-    }
+        * {
+            font-family: "Poppins", sans-serif;
+            color: #0c0c0c;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    .main{
-    background-color: #eae6f5;
-    height: 100vh;
-    width: 100vw;
-    }
+        .main {
+            background-color: #eae6f5;
+            height: 100%;
+            width: 100%;
+        }
 
-    a,
-    a:hover,
-    a:focus {
-    text-decoration: none;
-    }
+        a,
+        a:hover,
+        a:focus {
+            text-decoration: none;
+        }
 
-    .navbar {
-    background-color: #EAE6F5;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+        .navbar {
+            background-color: #EAE6F5;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
 
-    }
+        }
 
-    .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
 
-    }
+        }
 
-    .navbar li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-    padding: 10px 20px;
-    font-family: "Poppins", sans-serif;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.3s;
-    height: 40px;
-    }
+        .navbar li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+            padding: 10px 20px;
+            font-family: "Poppins", sans-serif;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+            height: 40px;
 
-    .navbar li a:hover,
-    .navbar li a.active {
-    background-color: #4B208C;
-    color: white;
-    }
+        }
 
-    .navbar .logo {
-    display: flex;
-    align-items: center;
-    height: 40px;
+        .navbar li a:hover,
+        .navbar li a.active {
+            background-color: #4B208C;
+            color: white;
+        }
 
-    }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            height: 40px;
 
-    .navbar .logo img {
-    height: 100%;
-    width: auto;
-    }
+        }
 
-    .navbar .logo .website-name {
-    font-size: 1.5em;
-    font-family: "Poppins", sans-serif;
-    color: #4B0082;
-    font-weight: bold;
-    line-height: 40px;
-    padding: 10px;
-    }
+        .navbar .logo img {
+            height: 100%;
+            width: auto;
+        }
 
-    /* End of Navigation Bar */
+        .navbar .logo .website-name {
+            font-size: 1.5em;
+            font-family: "Poppins", sans-serif;
+            color: #4B0082;
+            font-weight: bold;
+            line-height: 40px;
+            padding: 10px;
+        }
+
+        /* End of Navigation Bar */
 
 
-    <!--banner-->
-    .banner{
-    margin-left: 30px;
-    position: absolute;
-    color: #000000;
+        .banner {
+            margin-left: 30px;
+            position: relative;
+            color: #000000;
 
-    
-    }
-    .banner .websitetext h1{
-    margin-left:120px;
-    font-size: 30px;
-    padding-top: 120px;
-    }
-    .banner .websitetext h2{
-    margin-left:120px;
-    font-size: 20px;
-    }
 
-    .banner .websitetext p{
-    margin-left: 120px;
-        font-size: 20px;
-    }
+        }
 
-    .banner .websitetext   a {
-    display: inline-block;
-    padding: 10px 40px;
-    background-color: #4b208c;
-    color: #ffffff;
-    border-radius: 35px;
-    margin-top: 35px;
-    margin-left: 120px;
-    }
+        .banner .websitetext h1 {
+            margin-left: 120px;
+            font-size: 30px;
+            padding-top: 120px;
+        }
 
-    .banner .websitetext  a:hover {
-    background-color: #5625a1;
-    }
-    .websitetext img{
-    border: 10px solid #4b208c;
-    border-radius: 50%;
-    padding: 6px;
-    width: 370px;
-    height: 370px;
-    position: absolute;
-    top:30%;
-    right: 160px; 
-    }
+        .banner .websitetext h2 {
+            margin-left: 120px;
+            font-size: 20px;
+        }
+
+        .banner .websitetext p {
+            margin-left: 120px;
+            font-size: 20px;
+        }
+
+        .banner .websitetext a {
+            display: inline-block;
+            padding: 10px 40px;
+            background-color: #4b208c;
+            color: #ffffff;
+            border-radius: 35px;
+            margin-top: 35px;
+            margin-left: 120px;
+        }
+
+        .banner .websitetext a:hover {
+            background-color: #5625a1;
+        }
+
+        .websitetext img {
+            border: 10px solid #4b208c;
+            border-radius: 50%;
+            padding: 6px;
+            width: 370px;
+            height: 370px;
+            position: absolute;
+            top: 20%;
+            right: 60px;
+            box-sizing: border-box;
+        }
     </style>
 
 
@@ -144,36 +152,38 @@
 
 
 <body>
-        <div class="navbar"> 
-            <div class="logo"> 
-                <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/codeBridge.png?raw=true" alt="Logo"> 
-                <span class="website-name">codeBridge</span> 
-            </div> 
-            <ul> 
-    
-                <li><a href="">PROJECTS</a></li> 
-                <li><a href="">ASSIGNMENETS</a></li> 
-                <li><a href="toturail.html">TUTOIRALS</a></li> 
-                <li><a href="">CHATAI</a></li> 
-                <li> <a href="Helper.html">HELPER </a></li> 
-            </ul> 
-        </div>
-        <!--welcome   text-->
-        <div class="banner">
-            <div class="websitetext">
-                <h1>Our special programmer<br>welcome to codeBridge!</h1>
-                <p>Join a supportive and inclusive environment
-                    <br> for blind and visually impaired programmers <br>to excel in the world of programming and
-                    software development.
-                </p>
-                <h2>System.out.print("Happy Coding!")</h2>
-
-                <a class="link" href="loginOption.html">Get started</a>
-
-                <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/webImg.jpg?raw=true" alt="website image coding">
-
-            </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/codeBridge.png?raw=true" alt="Logo">
+            <span class="website-name">codeBridge</span>
         </div>
+        <ul>
+
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="">ASSIGNMENETS</a></li>
+            <li><a href="toturail.html">TUTOIRALS</a></li>
+            <li><a href="">CHATAI</a></li>
+            <li> <a href="Helper.html">HELPER </a></li>
+        </ul> 
+            
+    </div>
+    <!--welcome   text-->
+    <div class="banner">
+        <div class="websitetext">
+            <h1>Our special programmer<br>welcome to codeBridge!</h1>
+            <p>Join a supportive and inclusive environment
+                <br> for blind and visually impaired programmers <br>to excel in the world of programming and
+                software development.
+            </p>
+            <h2>System.out.print("Happy Coding!")</h2>
+
+            <a class="link" href="loginOption.html">Get started</a>
+
+            <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/webImg.jpg?raw=true"
+                alt="website image coding">
+
+        </div>
+    </div>
 
     </div>
 </body>

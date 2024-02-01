@@ -1,3 +1,5 @@
+<!--author Raghad-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -260,22 +262,25 @@
         <ul>
 
             <li><a href="">PROJECTS</a></li>
-            <li><a href="">ASSIGNMENETS</a></li>
-            <li><a href="">TUTOIRALS</a></li>
+            <li><a href="AssigenmentForm.html">ASSIGNMENETS</a></li>
+            <li><a href="toturail.html">TUTOIRALS</a></li>
             <li><a href="">CHATAI</a></li>
-            <li> <a href="">HELPER</a></li>
+            <li> <a href="Helper.html">HELPER</a></li>
         </ul>
     </div>
     <form id="assignmentForm" onsubmit="validateForm(event)">
         <div>
             <h2> Create Assignment </h2>
             <br>
+            <!--Assignment intsurction section-->
 
             <label for="instructions">Assignment Instructions</label>
             <textarea id="instructions" name="Instructions" placeholder="Type the assignment instructions"
                 rows="8"></textarea>
             <span id="instructionsError" class="error-message"></span>
             <br>
+            <!--Due date of the assignment-->
+
             <div class="date-range">
                 <div class="date-field">
                     <label for="startDate">Start at</label>
@@ -288,6 +293,7 @@
                     <span id="endDateError" class="error-message"></span>
                 </div>
             </div>
+            <!--Class Selection-->
 
             <div class="select-wrapper">
                 <br><br>
@@ -305,8 +311,10 @@
         <button type="submit" class="centered">Submit</button>
 
     </form>
-    <div id="backdrop" class="backdrop"> </div>
 
+    <!--reduce the focus of the background by making it a little bit transparent -->
+    <div id="backdrop" class="backdrop"> </div>
+    <!--message for successful submission -->
     <div class="popup" id="successPopup">
         <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/checked.png?raw=true" alt="check icon">
         <h2>Thank you!</h2>
@@ -316,6 +324,7 @@
     </div>
     <div class="popup" id="confirmationPopup">
         <h2>Confirm Submission</h2>
+        <!--Confirmation message before submitting the form -->
         <p>Are you sure you want to submit this assignment?</p>
         <br>
         <div class="button-container">
@@ -327,6 +336,7 @@
 
 </body>
 <script>
+    /*    ensure nothing of the form feilds are missed */
     function validateForm(event) {
         event.preventDefault();
 
@@ -399,7 +409,7 @@
         document.getElementById("successPopup").style.display = "none";
         document.getElementById("backdrop").style.display = "none";
     });
-    // to prevent selectiin date eariler than today 
+    // to prevent selectiin date eariler than today by making them disabled 
     var today = new Date().toISOString().split('T')[0];
     startDate.setAttribute('min', today);
     endDate.setAttribute('min', today);
