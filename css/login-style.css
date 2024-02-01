@@ -1,0 +1,112 @@
+
+* {
+    font-family: "Poppins", sans-serif;
+    color: #0c0c0c;
+    
+  }
+  
+  .services-section-login{
+    background-color: #eae6f5;
+    height: 14%;
+    width: 100%;
+    position: absolute;
+}
+  
+  a,
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+  
+  .logo{
+    display: inline-flex;
+    align-items: center;}
+  
+  .logo img {
+      margin-left: 40px;
+      width: 140px;
+      height: auto;
+    }
+    
+    .logo span {
+      font-size: 22px;
+      font-weight: 700;
+      color: #4b208c;
+      margin: 0;
+      padding: 0;
+    }
+  .Nav{
+    background-color: #eae6f5;
+    margin-left: 800px;
+    margin-top: -60px;
+    padding: 20px;
+    
+    }
+    .nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      
+    }
+    
+    .list-item {
+      display: inline-block;
+      line-height: 0px;
+      width: 130px;
+      text-transform: uppercase;
+    }
+    .Nav ul li a{
+      border-radius: 2px;
+  
+    }
+    .Nav a:hover {
+      color: white;
+      background-color: #371e71;
+      transition: .3s;
+    }
+ 
+  .login_section  {
+    position: absolute;
+    left: 600px;
+    right: 600px;
+    top: 120px;
+
+    
+    
+  }
+  
+  .login_section  input {
+    width: 100%;
+    border: none;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    background-color: transparent;
+    outline: none;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16);
+  }
+  .login_section  input::placeholder {
+    color: #737272;
+  }
+
+  .login_section button {
+    border: none;
+    display: inline-block;
+    padding: 12px 45px;
+    background-color: #4b208c;
+    color: #ffffff;
+    border-radius: 0px;
+    margin-top: 35px;
+    margin-left: 120px;
+  }
+  .login_section h1{
+    margin-left: 120px;
+    margin-top: 35px;
+    margin-bottom: 36px;
+    color: #4b208c;
+
+  }
+  
+  .contact_section button:hover {
+    background-color:#5625a1;
+  }

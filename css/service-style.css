@@ -1,0 +1,93 @@
+* {
+    font-family: "Poppins", sans-serif;
+    color: #0c0c0c;
+    
+  }
+  
+  .services-section-login{
+    background-color: #eae6f5;
+    height: 14%;
+    width: 100%;
+    position: absolute;
+}
+  
+  a,
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+  
+  .logo{
+    display: inline-flex;
+    align-items: center;}
+  
+  .logo img {
+      margin-left: 40px;
+      width: 140px;
+      height: auto;
+    }
+    
+    .logo span {
+      font-size: 22px;
+      font-weight: 700;
+      color: #4b208c;
+      margin: 0;
+      padding: 0;
+    }
+  .Nav{
+    background-color: #eae6f5;
+    margin-left: 800px;
+    margin-top: -60px;
+    padding: 20px;
+    
+    }
+    .nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      
+    }
+    
+    .list-item {
+      display: inline-block;
+      line-height: 0px;
+      width: 130px;
+      text-transform: uppercase;
+    }
+    .Nav ul li a{
+      border-radius: 2px;
+  
+    }
+    .Nav a:hover {
+      color: white;
+      background-color: #371e71;
+      transition: .3s;
+    }
+    
+    .teacher {
+        text-align: center;
+        width: 30%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        display: inline-block;
+        
+        
+    }
+    .Student{
+        text-align: center;
+        width: 30%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        display: inline-block;
+        margin-left: 200px;
+    }
+
+    .Student:hover, .teacher:hover {
+        box-shadow: 20px 20px 50px grey;
+       
+    }
+
+    .container{
+        padding: 0;
+        margin-left: 200px;
+        margin-top: 130px;
+
+    }
