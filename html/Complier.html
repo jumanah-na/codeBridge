@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+
+    <title>Complier</title>
+
+    <style>
+        .navbar {
+            background-color: #EAE6F5;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .navbar li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+            padding: 10px 20px;
+            font-family: "Poppins", sans-serif;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+            height: 40px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            background-color: #4B208C;
+            color: white;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            height: 40px;
+
+        }
+
+        .navbar .logo img {
+            height: 100%;
+            width: auto;
+        }
+
+        .navbar .logo .website-name {
+            font-size: 1.5em;
+            font-family: "Poppins", sans-serif;
+            color: #4B0082;
+            font-weight: bold;
+            line-height: 40px;
+            padding: 10px;
+        }
+
+        /* End of Navigation Bar */
+
+        .shortcut-icon {
+            width: 24px;
+            /* Small icon size */
+            height: 24px;
+            /* Icon position adjusted in the flex container */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* Optional: Adjusts box-sizing to include padding and border in the element's total width and height */
+        }
+
+        button {
+            display: block;
+            background-color: #4B208C;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px auto;
+            width: 100px;
+            height: 40px;
+
+        }
+
+
+        button:hover {
+            background-color: #5625A8;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/codeBridge.png?raw=true" alt="Logo">
+            <span class="website-name">codeBridge</span>
+        </div>
+        <ul>
+
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="">ASSIGNMENETS</a></li>
+            <li><a href="">TUTOIRALS</a></li>
+            <li><a href="">CHATAI</a></li>
+            <li> <a href="Helper.html">HELPER </a></li>
+        </ul>
+    </div>
+
+    <div>
+
+        <button type="button">Run</button>
+        <button type="button">Save</button>
+        <button type="button">Read</button>
+        <button type="submit">Submit</button>
+    </div>

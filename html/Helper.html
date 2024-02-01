@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+    <title>Helper</title>
+    <style>
+        .navbar {
+            background-color: #EAE6F5;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .navbar li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+            padding: 10px 20px;
+            font-family: "Poppins", sans-serif;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+            height: 40px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            background-color: #4B208C;
+            color: white;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            height: 40px;
+
+        }
+
+        .navbar .logo img {
+            height: 100%;
+            width: auto;
+        }
+
+        .navbar .logo .website-name {
+            font-size: 1.5em;
+            font-family: "Poppins", sans-serif;
+            color: #4B0082;
+            font-weight: bold;
+            line-height: 40px;
+            padding: 10px;
+        }
+
+        /* End of Navigation Bar */
+        body {
+            background-color: #F3F0F6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 5px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 900px;
+            padding: 5px;
+        }
+
+        .grid-item {
+            /* Styles for individual items */
+            background-color: #E6E6FA;
+            border: 2px solid #800080;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        /* Styles for the shortcuts section */
+        .shortcut-section {
+            background-color: #ffffff;
+            border: 2px solid #c7c7c7;
+            margin: 20px auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 6px 4px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+
+        .shortcut-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .shortcut-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .shortcut-title {
+            font-size: 1em;
+            color: #4B0082;
+            margin: 0 10px;
+
+        }
+
+        .shortcut-description {
+            font-size: 0.9em;
+            text-align: center;
+            margin: 5px 0 0 0;
+            width: 100%;
+        }
+
+        /* Style updates for consistency */
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #4B208C;
+            font-family: 'monospace';
+            font-style: italic;
+
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+            color: #624889;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/codeBridge.png?raw=true" alt="Logo">
+            <span class="website-name">codeBridge</span>
+        </div>
+        <ul>
+
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="">ASSIGNMENETS</a></li>
+            <li><a href="">TUTOIRALS</a></li>
+            <li><a href="">CHATAI</a></li>
+            <li> <a href="">HELPER</a></li>
+        </ul>
+    </div>
+
+    <h2>Discover a smoother and more efficient browsing experience with our website's shortcuts</h2>
+
+    <div class="grid-container">
+        <!-- Each of these sections becomes a grid item -->
+        <div class="grid-item shortcut-section">
+            <div class="shortcut-header">
+                <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/audio_icon.png?raw=true"
+                    class="shortcut-icon" alt="Read">
+                <h2 class="shortcut-title">Read</h2>
+            </div>
+            <p class="shortcut-description">Press Ctrl + R to reead the contents of the page </p>
+        </div>
+
+        <div class="grid-item shortcut-section">
+            <div class="shortcut-header">
+                <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/copy_icon.png?raw=true"
+                    class="shortcut-icon" alt="Copy">
+                <h2 class="shortcut-title">Copy</h2>
+            </div>
+            <p class="shortcut-description">Press Ctrl + C to copy </p>
+        </div>
+
+        <div class="grid-item shortcut-section">
+            <div class="shortcut-header">
+                <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/delete_icon.png?raw=true"
+                    class="shortcut-icon" alt="Delete">
+                <h2 class="shortcut-title">Delete</h2>
+            </div>
+            <p class="shortcut-description">Press Ctrl + D to delete </p>
+        </div>
+
+        <div class="grid-item shortcut-section">
+            <div class="shortcut-header">
+                <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/save_icone.png?raw=true"
+                    class="shortcut-icon" alt="Save">
+                <h2 class="shortcut-title">Save</h2>
+            </div>
+            <p class="shortcut-description"> Press Ctrl + S to save
+            </p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

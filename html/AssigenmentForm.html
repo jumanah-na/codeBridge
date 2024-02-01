@@ -5,22 +5,256 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Assignments</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-        href="C:\Users\ASUS\OneDrive - King Abdullaziz University\Desktop\Prject499\Create Assigenment Page\AssignemnetStle.css">
 
+    <style>
+        .navbar {
+            background-color: #EAE6F5;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .navbar li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+            padding: 10px 20px;
+            font-family: "Poppins", sans-serif;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+            height: 40px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            background-color: #4B208C;
+            color: white;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            height: 40px;
+
+        }
+
+        .navbar .logo img {
+            height: 100%;
+            width: auto;
+        }
+
+        .navbar .logo .website-name {
+            font-size: 1.5em;
+            font-family: "Poppins", sans-serif;
+            color: #4B0082;
+            font-weight: bold;
+            line-height: 40px;
+            padding: 10px;
+        }
+
+        /* End of Navigation Bar */
+        /* form style */
+        form {
+            background: linear-gradient(to right, #e5d9f9, #f2dcf2, #bfaad0);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+
+        }
+
+        /* remove the default black color of corners of theese fields when it is avtice */
+        form input[type=date]:focus,
+        form textarea:focus,
+        form select:focus {
+            outline: none;
+        }
+
+        button {
+            display: block;
+            background-color: #4B208C;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        /* style the buttons which are in the center such as submit and ok buttong in the success message */
+        .centered {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+
+        }
+
+        button:hover {
+            background-color: #5625A8;
+        }
+
+        .dropDownMenu {
+            width: auto;
+            padding: 4px 8px;
+            font-size: 16px;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+            background-color: #FFFFFF;
+
+            font-family: "Poppins", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 0;
+            box-sizing: border-box;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .date-range {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .date-field {
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+        }
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            color: #4B0082;
+        }
+
+        label {
+            color: #4B208C;
+            font-family: sans-serif;
+
+        }
+
+        .help-icon {
+            width: 24px;
+            height: 24px;
+
+        }
+
+
+
+        .date-field {
+            position: relative;
+
+        }
+
+        .date-field .error-message {
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+        }
+
+        .error-message {
+            display: block;
+            color: #ff0000;
+            font-size: 0.8em;
+            text-align: left;
+            margin-top: 5px;/
+        }
+
+        .popup {
+            display: none;
+            width: 50%;
+            max-width: 500px;
+            background: #fff;
+            border-radius: 9px;
+            position: absolute;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border: 2px solid #e8e8e8;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 0 30px 30px;
+            color: #333;
+            z-index: 1000;
+
+        }
+
+        .popup img {
+            width: 100px;
+            margin-top: -50px;
+            border-radius: 50%;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .popup h2 {
+            font-size: 38px;
+            font-weight: 600;
+            margin: 30px 0 10px;
+        }
+
+        /* when displying confimation and success message, this effect will happen */
+        .backdrop {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 999;
+            /* Below the popup but above other content */
+        }
+    </style>
 
 
 </head>
-
 
 <body>
 
     <div class="navbar">
         <div class="logo">
-            <img src="C:\Users\ASUS\OneDrive - King Abdullaziz University\Desktop\Prject499\Picture1.png" alt="Logo">
+            <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/codeBridge.png?raw=true" alt="Logo">
             <span class="website-name">codeBridge</span>
         </div>
         <ul>
@@ -29,7 +263,7 @@
             <li><a href="">ASSIGNMENETS</a></li>
             <li><a href="">TUTOIRALS</a></li>
             <li><a href="">CHATAI</a></li>
-            <li> <a href="">Helper</a></li>
+            <li> <a href="">HELPER</a></li>
         </ul>
     </div>
     <form id="assignmentForm" onsubmit="validateForm(event)">
@@ -74,7 +308,7 @@
     <div id="backdrop" class="backdrop"> </div>
 
     <div class="popup" id="successPopup">
-        <img src="checked.png">
+        <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/checked.png?raw=true" alt="check icon">
         <h2>Thank you!</h2>
         <p>The assignment has been successfully uploaded.</p>
         <br>
@@ -91,8 +325,85 @@
     </div>
 
 
-    <script
-        src="C:\Users\ASUS\OneDrive - King Abdullaziz University\Desktop\Prject499\Create Assigenment Page\AssignementForm.js"></script>
 </body>
+<script>
+    function validateForm(event) {
+        event.preventDefault();
+
+        const instructions = document.getElementById("instructions");
+        const startDate = document.getElementById("startDate");
+        const endDate = document.getElementById("endDate");
+        const classSelect = document.getElementById("class");
+
+        let isValid = true;
+
+        // Clear previous error messages
+        document.getElementById("instructionsError").textContent = "";
+        document.getElementById("startDateError").textContent = "";
+        document.getElementById("endDateError").textContent = "";
+        document.getElementById("selectError").textContent = "";
+
+        // Validate Instructions
+        if (!instructions.value.trim()) {
+            document.getElementById("instructionsError").textContent = "* Required.";
+            isValid = false;
+        }
+
+        // Validate Start Date
+        if (!startDate.value.trim()) {
+            document.getElementById("startDateError").textContent = "* Required.";
+            isValid = false;
+        }
+
+        // Validate End Date
+        if (!endDate.value.trim()) {
+            document.getElementById("endDateError").textContent = "* Required.";
+            isValid = false;
+        }
+
+        // Validate Class Selection
+        if (!classSelect.value) {
+            document.getElementById("selectError").textContent = "* Required.";
+            isValid = false;
+        }
+        if (isValid) {
+            // Show confirmation message
+            document.getElementById("confirmationPopup").style.display = "block";
+            document.getElementById("backdrop").style.display = "block";
+        }
+    }
+
+    document.getElementById("confirmButton").addEventListener("click", function () {
+        // User confirmed submission, show success message and reset form
+        showSuccessMessage();
+        document.getElementById("assignmentForm").reset();
+    });
+
+    document.getElementById("cancelButton").addEventListener("click", function () {
+        // User cancelled, hide confirmation popup
+        hideConfirmation();
+    });
+
+    function showSuccessMessage() {
+        document.getElementById("confirmationPopup").style.display = "none";
+        document.getElementById("successPopup").style.display = "block";
+    }
+
+    function hideConfirmation() {
+        document.getElementById("confirmationPopup").style.display = "none";
+        document.getElementById("backdrop").style.display = "none";
+    }
+
+    document.getElementById("okButton").addEventListener("click", function () {
+        // Hide success message
+        document.getElementById("successPopup").style.display = "none";
+        document.getElementById("backdrop").style.display = "none";
+    });
+    // to prevent selectiin date eariler than today 
+    var today = new Date().toISOString().split('T')[0];
+    startDate.setAttribute('min', today);
+    endDate.setAttribute('min', today);
+
+</script>
 
 </html>
