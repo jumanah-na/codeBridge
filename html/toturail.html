@@ -3,44 +3,140 @@
     <head>
         <title>codeBridge</title>
         <!--style-->
-        <link rel="stylesheet" type="text/css" href="css/Toturail-style.css" />
         <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+        <style>
+            * {
+    font-family: "Poppins", sans-serif;
+    color: #0c0c0c;
+    
+  }
+  .navbar {
+    background-color: #EAE6F5;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    padding: 10px 20px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    height: 40px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    background-color: #4B208C;
+    color: white;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+}
+
+.navbar .logo img {
+    height: 100%;
+    width: auto;
+}
+
+.navbar .logo .website-name {
+    font-size: 1.5em;
+    font-family: "Poppins", sans-serif;
+    color: #4B0082;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 10px;
+}
+
+/* End of Navigation Bar */
+  
+
+
+/* End of Navigation Bar */
+    .pract{
+        display: block;
+        margin-top: 100px;
+        
+        
+    }
+    .pract h2{
+        text-align: center;
+    }
+    .pract h3{
+        text-align: center;
+        color:#4b208c;
+    }
+    .pract input{
+        width: 500px;
+        height: 60px;
+        font-size: 16px;
+        
+    }
+    .pract input:focus{
+        border: 3px solid #4b208c;
+    }
+    .pract form{
+        text-align: center;
+    }
+    .pract   a {
+        display: inline-block;
+        padding: 10px 40px;
+        background-color: #4b208c;
+        color: #ffffff;
+        margin-top: 35px;
+        margin-left: 700px;
+        border-radius: 35px;
+      }
+      
+      .pract a:hover {
+        background-color: #5625a1;
+      }
+    
+        </style>
     </head>
 
 
     <body>
+        <div class="navbar"> 
+            <div class="logo"> 
+                <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/codeBridge.png?raw=true" alt="Logo"> 
+                <span class="website-name">codeBridge</span> 
+            </div> 
+            <ul> 
+     
+                <li><a href="">PROJECTS</a></li> 
+                <li><a href="">ASSIGNMENETS</a></li> 
+                <li><a href="">TUTOIRALS</a></li> 
+                <li><a href="">CHATAI</a></li> 
+                <li> <a href="Helper.html">HELPER </a></li> 
+            </ul> 
+        </div>
         <div class="services-section-login">
-            <!-- start of the header section -->
-            <header class="header">
-                <!--logo of the website-->
-                <a class="logo" href="index.html">
-                    <img src="C:\Users\Jumma\OneDrive - King Abdullaziz University\Desktop\Jumanah-codes\pictures\codeBridge LOGO.png" alt="codeBridge Logo">
-                    <span>
-                    codeBridge
-                    </span>
-                </a>
-
-                <!--Navigation bar-->
-                <nav class="Nav">
-                    <ul class="nav-list">   
-                        <li class="list-item"><a href="#">Project</a></li>
-                
-                        <li class="list-item"><a href="#">Assignment</a></li>
-                    
-                        <li class="list-item"><a href="#">Toturail</a></li>
-
-                        <li class="list-item"><a href="#">ChatAI</a></li>
-
-                        <li class="list-item"><a href="#">Helper</a></li>
-                    </ul>   
-                </nav>
-                <!-- end of the header section -->  
-            </header>
+            
             <div class="pract">
                 <h2>let's start practise keyboard typing</h2>
                 <h3>Type the word (Hello World!)</h3>
