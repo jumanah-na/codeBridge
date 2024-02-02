@@ -1,60 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student</title>
-        <link href="style.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #ece4f3;
+            font-family: Cursive;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .info {
+            background-color: #fff;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 100px;
+            padding: 20px 0px 20px 70px;
+            border-radius: 50px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .left {
+            margin-left: 130px;
+            flex: 1;
+        }
+
+        .right {
+            margin-top: 75px;
+            flex: 1;
+            text-align: center;
+            margin-right: 140px;
+        }
+
+        button {
+            font-size: medium;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            padding: 8px 22px;
+            margin: 8px 22px;
+            border-radius: 15px;
+            background-color: #4d258d;
+            transition: all 0.2s ease;
+        }
+
+        .notify {
+            background-color: #fff;
+            border-radius: 50px;
+            padding: 5px;
+        }
+
+
+        .navbar {
+            background-color: #EAE6F5;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+
+        }
+
+        .navbar li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+            padding: 10px 20px;
+            font-family: "Poppins", sans-serif;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+            height: 40px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            background-color: #4B208C;
+            color: white;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            height: 40px;
+
+        }
+
+        .navbar .logo img {
+            height: 100%;
+            width: auto;
+        }
+
+        .navbar .logo .website-name {
+            font-size: 1.5em;
+            font-family: "Poppins", sans-serif;
+            color: #4B0082;
+            font-weight: bold;
+            line-height: 40px;
+            padding: 10px;
+        }
+    </style>
+
 </head>
+
 <body>
-    <!-- start header section 
-   <div>
-        <h1>codeBridge</h1>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://github.com/jumanah-na/codeBridge/blob/main/pictures/codeBridge.png?raw=true" alt="Logo">
+            <span class="website-name">codeBridge</span>
+        </div>
         <ul>
-            <li>
-              <a href="student.html">Home </a>
-            </li>
-            <li>
-                <a href="student.html">Project </a>
-            </li>
-            <li>
-                <a href="student.html">Assignment </a>
-            </li>
-            <li>
-                <a href="student.html">Tutorial </a>
-            </li>
-            <li>
-                <a href="student.html">ChatAI </a>
-            </li>
-          </ul>
-   </div>-->
 
-
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="">ASSIGNMENETS</a></li>
+            <li><a href="toturail.html">TUTOIRALS</a></li>
+            <li><a href="">CHATAI</a></li>
+            <li> <a href="Helper.html">HELPER </a></li>
+        </ul> 
+            
+    </div>
     <!-- start student info section -->
-   <div class="info">
-<h1>Lama alanjv</h1>
-<h2>2001231</h2>
-<h2>lama@gmail.com</h2>    
-   </div>
+    <div class="info">
+        <h1>Lama alanjv</h1>
+        <h2>2001231</h2>
+        <h2>lama@gmail.com</h2>
+    </div>
 
     <!-- start notify section -->
-    <section class="container"> 
+    <section class="container">
         <div class="left">
             <h2>Notifications</h2>
-            <p><span  class="notify">Dr.Sara has started an assignment, it wil be due to 25/2/2024.</span></p>
-            <p><span  class="notify">Dr.Amani has started an assignment, it wil be due to 11/2/2024.</span></p>
-            <p><span  class="notify">Dr.Zahrah has started an assignment, it wil be due to 1/3/2024.</span></p>
-        </div> 
+            <p><span class="notify">Dr.Sara has started an assignment, it wil be due to 25/2/2024.</span></p>
+            <p><span class="notify">Dr.Amani has started an assignment, it wil be due to 11/2/2024.</span></p>
+            <p><span class="notify">Dr.Zahrah has started an assignment, it wil be due to 1/3/2024.</span></p>
+        </div>
         <div class="right">
-         <button>Create Project</button>
-         <button>My Projects</button>
-         <button>My Assignments</button>
-         <button>Writing Tutorial</button>
-         <button>ChatAI</button>
-        </div> 
+            <button>Create Project</button>
+            <button>My Projects</button>
+            <button>My Assignments</button>
+            <button>Writing Tutorial</button>
+            <button>ChatAI</button>
+        </div>
     </section>
 
 </body>
+
 </html>
-
-
