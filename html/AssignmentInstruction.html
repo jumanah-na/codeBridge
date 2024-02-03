@@ -83,22 +83,160 @@
         }
 
         /* End of Navigation Bar */
+        body {
+  font-family: "Poppins", sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+}
+
+.layout_padding {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.layout_padding2 {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.heading_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.heading_container h2 {
+  position: relative;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.heading_container img {
+  width: 30px;
+}
+
+.hero_area {
+  height: 98vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #eae6f5;
+}
+
+.sub_page .hero_area {
+  height: auto;
+}
+
+.service_section {
+  text-align: center;
+}
+
+.service_section .heading_container {
+  justify-content: center;
+}
+
+.service_section .service_container {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+  flex-wrap: wrap;
+}
+
+
+
+.service_section .service_container .box:hover,
+.service_section .service_container .box.active {
+  border-top: 15px solid #512a97;
+}
+
+.service_section .btn-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.service_section .btn-box a {
+  display: inline-block;
+  padding: 10px 35px;
+  background-color: #4b208c;
+  color: #ffffff;
+  border-radius: 35px;
+}
+
+
+.service_section .btn-box a:hover {
+  background-color: #5625a1;
+}
+
+.footer_section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.footer_section p {
+  color: #000000;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+
+*,
+*::after {
+  box-sizing: border-box;
+}
     </style>
 
     <title>codeBridge</title>
 
     <!-- slider stylesheet -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
-
-    <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
     <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
@@ -115,9 +253,9 @@
 
             <li><a href="ProjectStu.html">PROJECTS</a></li>
             <li><a href="AssignmentStu.html">ASSIGNMENETS</a></li>
-            <li><a href="">TUTOIRALS</a></li>
+            <li><a href="toturail.html">TUTOIRALS</a></li>
             <li><a href="">CHATAI</a></li>
-            <li><a href="">HELPER</a></li>
+            <li><a href="Helper.html">HELPER</a></li>
         </ul>
     </div>
         </header>
@@ -183,8 +321,6 @@
         </footer>
     </div>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
