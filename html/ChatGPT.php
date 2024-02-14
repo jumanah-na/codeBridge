@@ -14,7 +14,7 @@ $content = "";
 
 // Check if the form has been submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['question'])) {
-    $chatGPT = new ChatGPT('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', 'gpt-3.5-turbo', 'You are a helpful assistance bot.','https://api.openai.com/v1/');
+    $chatGPT = new ChatGPT('', 'gpt-3.5-turbo', 'You are a helpful assistance bot.','https://api.openai.com/v1/');
     
     // Send the message and get the response
     $response = $chatGPT->sendMessage($_POST['question']);
